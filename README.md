@@ -73,4 +73,35 @@ User inputs required features; Flask processes them, loads the model, and return
 ## How to Run
 
 1. Clone the repository:
-2. 
+https://github.com/farheen2515/heart-failure-prediction
+2. Install dependencies:
+   pip install flask scikit-learn numpy pandas
+3. Start the web application:
+   python app.py
+4. Open your browser at [localhost:5000]https://shiny-couscous-4j6jp4vpr9rw3jxgq-5000.app.github.dev/ and enter patient data to see predictions.
+
+## File Structure
+heart-failure-prediction/
+│
+├── heart_failure_training.ipynb # Jupyter notebook for training
+├── model.pkl # Saved random forest model
+├── app.py # Flask application
+├── templates/
+│ └── index.html # HTML interface
+└── README.md
+## Results
+
+- Accuracy: ~73% on test data (RandomForestClassifier)[1].
+- The app enables real-time predictions through a simple web form.
+- Modular: You can replace the classifier or expand the form with new features.
+
+## References
+
+- [Heart Failure Clinical Records Data Set (UCI)](https://archive.ics.uci.edu/ml/datasets/heart+failure+clinical+records)
+- [Scikit-learn Documentation](https://scikit-learn.org/stable/)
+- [Flask Documentation](https://flask.palletsprojects.com/)
+
+---
+
+Contact:  
+If you have questions, open an issue or contact the repository maintainer.
